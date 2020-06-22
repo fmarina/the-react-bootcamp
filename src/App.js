@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Card from './DefaultProps';
+import RoundedImg from './Practice/1-DefaultProps-PropTypes'
 
 function App() {
   return (
     <div>
-      <Card cardColor="red"/>
-      <Card width={200}/>
-      <Card cardColor="green"/>
+      <RoundedImg src="https://picsum.photos/id/237/300/300" borderRadius="10px" />
     </div>
   );
 }
