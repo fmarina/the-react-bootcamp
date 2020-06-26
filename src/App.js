@@ -7,13 +7,13 @@ import './App.css';
 // import AppHOC from './Practice/5-HigherOrderComponent/AppHOC';
 // import Example from './Practice/6-RenderProps/Example';
 // import AppRenderProps from './Practice/6-RenderProps/Example RenderProps/AppRenderProps';
-import AppRenderProps from './Practice/6-RenderProps/RenderPropsPractice/AppRenderProps';
-
+// import AppRenderProps from './Practice/6-RenderProps/RenderPropsPractice/AppRenderProps';
+import AppShouldComponentUpdate from './Practice/7-ShouldComponentUpdate-ReactMemo/AppComponent';
 
 function App() {
   return (
       <div>
-        <AppRenderProps />
+        <AppShouldComponentUpdate />
       </div>
   )
 }
