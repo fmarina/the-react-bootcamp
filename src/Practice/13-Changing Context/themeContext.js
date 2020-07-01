@@ -28,3 +28,15 @@ class ThemeContextProvider extends Component {
 }
 
 export {ThemeContextProvider, Consumer as ThemeContextConsumer}
+
+/*
+import AppContext from './Practice/13-Changing Context/AppContext';
+import {ThemeContextProvider} from "./Practice/13-Changing Context/themeContext";
+
+ReactDOM.render(
+    <ThemeContextProvider>
+        <AppContext />
+    </ThemeContextProvider>, 
+    document.getElementById("root")
+)
+*/
