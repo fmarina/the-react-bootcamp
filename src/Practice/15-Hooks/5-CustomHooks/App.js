@@ -1,12 +1,9 @@
 import React, {useState} from "react"
-/* Pop Quiz!
- Refactor the class component below to use hooks instead*/
+import useCounter from './useCounter';
 
-function App() {   
-    const [count, setCount] = useState(0);
-
-    const increment = () => setCount(prevCount => prevCount + 1);
-
+function App() {
+    const {count, increment} = useCounter();
+    
     return (
         <div>
             <h1>The count is {count}</h1>
