@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 function App() {
     const [newTodoValue, setNewTodoValue] = useState("");
     const [todoList, setTodoList] = useState([]);
+    const inputRef = useRef(null);
 
     const handleChange = (e) => setNewTodoValue(e.target.value);
-    
+
     const addTodo = (e) => {
         e.preventDefault();
         setTodoList(prevTodoList => [...prevTodoList, newTodoValue]);
         setNewTodoValue("");
+        inputRef.current.focus();
     };
 
     const allTodos = todoList.map(todo => <p key={todo}>{todo}</p>);
@@ -17,7 +19,12 @@ function App() {
     return(
         <div>
             <form>
-                <input type="text" name="todo" value={newTodoValue} onChange={handleChange} 
+                <input 
+                    ref={inputRef}
+                    type="text" 
+                    name="todo" 
+                    value={newTodoValue} 
+                    onChange={handleChange} 
                 />
                 <button onClick={addTodo}>Add todo item</button>
             </form>
