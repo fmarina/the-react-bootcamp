@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import AppRef from './Practice/15-Hooks/3-useRef/App';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppRef />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
