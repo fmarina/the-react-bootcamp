@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import AppRef from './Practice/15-Hooks/3-useRef/App';
+import AppContext from './Practice/15-Hooks/4-useContext/App';
+import {ThemeContextProvider} from './Practice/15-Hooks/4-useContext/themeContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AppRef />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <ThemeContextProvider>
+        <AppContext />
+    </ThemeContextProvider>, 
+    document.getElementById("root")
+)
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 
