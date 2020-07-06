@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import AppRefactoring from './Practice/15-Hooks/5-CustomHooks/App';
+import AppCustom from './Practice/15-Hooks/6-CustomHookPractice/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppRefactoring />
+    <AppCustom />
   </React.StrictMode>,
   document.getElementById('root')
 );
