@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import AppCustom from './Practice/15-Hooks/6-CustomHookPractice/App';
+import {BrowserRouter as Router} from 'react-router-dom';
+import AppRouter from './Practice/16-ReactRouter/2-ChallengeReactRouter/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppCustom />
+    <Router>
+        <AppRouter />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
