@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import {BrowserRouter as Router} from 'react-router-dom';
-import AppRouter from './Practice/16-ReactRouter/6-ReactRouterOwnPractice/App';
+import AppRouter from './Practice/16-ReactRouter/7-useRouteMatch/App';
 
 ReactDOM.render(
   <React.StrictMode>
