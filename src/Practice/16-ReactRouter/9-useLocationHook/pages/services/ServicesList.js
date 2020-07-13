@@ -1,8 +1,11 @@
 import React from "react"
 import servicesData from './servicesData';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 function ServicesList() {
+    const location = useLocation();
+    console.log(location);
+
     const services = servicesData.map(service => (
         <li key={service._id}>
             <Link to={`/services/${service._id}`}>
