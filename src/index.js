@@ -4,14 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import {BrowserRouter as Router} from 'react-router-dom';
-import AppRouter from './Practice/16-ReactRouter/11-ChallengeReactRouter/App';
+// import {BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-        <AppRouter />
-    </Router>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
