@@ -39,10 +39,8 @@ function reducer(state = initialState, action) {
                 favoriteThings: [...state.favoriteThings, action.payload]
             }
         case "REMOVE_FAVORITE_THING":
-            const updatedArr = state.favoriteThings.filter( thing => (
-                thing !== action.payload
-            ));
-           
+            const arrCopy = [...state.favoriteThings];
+            const updatedArr = state.favoriteThings.filter(thing => thing.toLowerCase() !== action.payload.toLowerCase())
             return {
                 ...state,
                 favoriteThings: updatedArr
@@ -64,4 +62,4 @@ store.dispatch(addFavoriteThing("Whiskers on kittens"))
  * Challenge: implement an action creator called `removeFavoriteThing` which takes the string
  * of the favorite thing you want to remove from the array and removes it
  */
-store.dispatch(removeFavoriteThing("Raindrops on roses"))
+store.dispatch(removeFavoriteThing("raindrops on roses"))
