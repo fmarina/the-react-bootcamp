@@ -51,3 +51,5 @@ function reducer(state = {count: 0}, action) {
             return state
     }
 }
+
+const store = redux.createStore(reducer);
