@@ -12,7 +12,7 @@ export function decrement() {
     }
 }
 
-function reducer(count = 40, action) {
+function reducer(count = 0, action) {
     switch(action.type) {
         case "INCREMENT":
             return count + 1
