@@ -4,9 +4,9 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import AppRedux from './Practice/17-Redux/2-ReduxInReact/3-Connect()/App';
+import AppRedux from './Practice/17-Redux/2-ReduxInReact/3-useSelectorHook/App';
 import {Provider} from "react-redux"
-import store from './Practice/17-Redux/2-ReduxInReact/3-Connect()/redux/index';
+import store from './Practice/17-Redux/2-ReduxInReact/3-useSelectorHook/redux/index';
 
 ReactDOM.render(
   <React.StrictMode>
