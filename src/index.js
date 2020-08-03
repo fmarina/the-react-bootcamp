@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import AppRedux from './Practice/17-Redux/2-ReduxInReact/3-Connect()/App';
 import {Provider} from "react-redux"
-import store from './Practice/17-Redux/2-ReduxInReact/1-Setup&Practice/redux/index';
+import store from './Practice/17-Redux/2-ReduxInReact/3-Connect()/redux/index';
 
 ReactDOM.render(
   <React.StrictMode>
